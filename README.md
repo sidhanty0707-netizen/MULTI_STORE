@@ -4,47 +4,6 @@ A Full Stack Order Management System built using **Next.js, React, Node.js, Expr
 
 This project was developed as part of a Full Stack Developer Assessment.
 
----
-
-# 📌 Features
-
-## Task 1 - Multi Store Order Management
-
-✅ Create Order
-
-✅ View Orders
-
-✅ Filter Orders by Store
-
-✅ Pagination Support
-
-✅ Update Order Status
-
-✅ API Validation
-
----
-
-## Task 2 - Real Time Notification
-
-✅ Socket.IO Integration
-
-✅ Real Time Order Creation Updates
-
-✅ Real Time Status Updates
-
----
-
-## Task 3 - Analytics & Archival
-
-✅ Archive Orders older than 30 days
-
-✅ Orders Per Day Analytics
-
-✅ Revenue Per Store
-
-✅ Top 5 Selling Items
-
----
 
 # 🛠 Tech Stack
 
@@ -63,47 +22,9 @@ This project was developed as part of a Full Stack Developer Assessment.
 - Express.js
 - MySQL
 - Socket.IO
-- Express Validator
 
----
 
 # 📁 Project Structure
-
-```
-MULTI_STORE
-
-│
-
-├── backend
-
-│ ├── config
-
-│ ├── controllers
-
-│ ├── middleware
-
-│ ├── routes
-
-│ ├── socket
-
-│ ├── server.js
-
-│
-
-├── frontend
-
-│ ├── app
-
-│ ├── components
-
-│ ├── services
-
-│
-
-├── README.md
-```
-
----
 
 # ⚙ Installation
 
@@ -182,141 +103,52 @@ http://localhost:3000
 
 ---
 
-# 📌 API Endpoints
 
-## Create Order
-
+## Create Order 
+ Base URL
+http://localhost:5000
 ```
-POST /orders
-```
+POST 
 
----
+1. Create Order  POST
 
-## Get Orders
+http://localhost:5000/orders
 
-```
-GET /orders?store_id=1&page=1&limit=10
-```
+2. Get Orders GET
 
----
+http://localhost:5000/orders 
 
-## Update Order Status
 
-```
-PATCH /orders/:id/status
-```
 
----
+3. Get Orders by Store  GET
 
-## Archive Old Orders
+ http://localhost:5000/orders?store_id=1
 
-```
-POST /orders/archive-old
-```
+4.Get Orders with Pagination GET
 
----
+http://localhost:5000/orders/1/status
 
-## Orders Per Day
+5. Update Order Status  PATCH
 
-```
-GET /orders/analytics/orders-per-day
-```
+http://localhost:5000/orders/1/status
 
----
+6. Archive Old Orders  POST
 
-## Revenue Per Store
+http://localhost:5000/orders/archive-old
 
-```
-GET /orders/analytics/revenue
-```
+7. Orders Per Day GET
 
----
+http://localhost:5000/orders/analytics/orders-per-day
 
-## Top Selling Items
+8. Revenue Per Store GET
 
-```
-GET /orders/analytics/top-items
-```
+http://localhost:5000/orders/analytics/revenue
 
----
+9. Top Selling Items GET
 
-# 📷 Screenshots
+http://localhost:5000/orders/analytics/top-items
 
-## Home
 
-```
-screenshots/home.png
-```
-
-## Create Order
-
-```
-screenshots/create-order.png
-```
-
-## Orders List
-
-```
-screenshots/orders-list.png
-```
-
-## Update Status
-
-```
-screenshots/update-status.png
-```
-
-## Analytics
-
-```
-screenshots/analytics.png
-```
-
----
-
-# Database
-
-MySQL
-
-Tables
-
-- orders
-- orders_archive
-
-Indexes
-
-- store_id
-- created_at
-
----
-
-# Socket.IO Events
-
-### New Order
-
-```
-orderCreated
-```
-
-### Status Updated
-
-```
-orderUpdated
-```
-
----
-
-# Future Improvements
-
-- Docker Support
-- Deployment on Vercel
-- Deployment on Render
-- Authentication
-- Role Based Access
-- Better Dashboard UI
-- React Query Integration
-
----
 
 # Author
 
@@ -326,8 +158,8 @@ GitHub
 
 https://github.com/sidhanty0707-netizen
 
----
 
-# License
+git clone https://github.com/sidhanty0707-netizen/MULTI_STORE.git
 
-MIT License
+
+drive link -https://1drv.ms/u/c/3D1938942FBFCA8D/IQDd_Iw84DK_QJIL0NWHXGMoAZL5b7_eEnnIJY_irHkxSNQ?e=Jdh7og
